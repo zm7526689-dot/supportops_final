@@ -13,9 +13,9 @@
 <table class="table" style="margin-top:10px">
   <thead><tr><th>#</th><th>الاسم</th><th>الهاتف</th><th>المنطقة</th><th>إدارة</th></tr></thead>
   <tbody>
-  <?php foreach($customers as $c): ?>
+  <?php $i=1; foreach($customers as $c): ?>
     <tr>
-      <td><?= $c['id'] ?></td>
+      <td><?= $i++ ?></td>
       <td><?= Utils::h($c['name']) ?></td>
       <td><?= Utils::h($c['phone']) ?></td>
       <td><?= Utils::h($c['area'] ?? '-') ?></td>
